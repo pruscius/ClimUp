@@ -1,0 +1,44 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    border-style: solid;
+    border-radius: 4px;
+    max-width: 100%;
+    width: 16%;
+    margin: 5px;
+}
+
+/* .nameClose {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+} */
+
+.name {
+    margin: auto;
+}
+
+.close {
+    align-self: flex-end;
+    cursor: pointer;
+    margin: 2px 2px;
+    background-color: red;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    width: 20px;
+    height: 20px;
+}
+
+.icon {
+    align-self: center;
+    height: 170px;
+    width: 170px;
+}
+
+.temps {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-evenly;
+}
