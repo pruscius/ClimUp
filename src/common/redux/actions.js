@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const apiKey = 'f528d40e6a74653b84c82a0832d85ccc'
+const apiKey = process.env.REACT_APP_API_KEY;
 
 const GET_CITY = "GET_CITY";
 const REMOVE_CITY = "REMOVE_CITY";
