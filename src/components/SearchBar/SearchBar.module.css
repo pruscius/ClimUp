@@ -1,7 +1,22 @@
 .input {
     font-family: 'Montserrat', sans-serif;
+    border-radius: 4px;
+    border-width: 1px;
+    height: 1.6em;
+}
+
+input:focus {
+    outline: none;
 }
 
 .btn {
     font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    margin-left: 1px;
+    font-weight: bold;
+    border-width: 0px;
+    background-color: #29335C;
+    color: #fff;
+    border-radius: 4px;
+    height: 1.85em
 }

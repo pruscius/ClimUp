@@ -2,18 +2,14 @@
     display: flex;
     flex-direction: column;
     font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
     border-style: solid;
+    border-width: 2px;
     border-radius: 4px;
     max-width: 100%;
     width: 16%;
     margin: 5px;
 }
-
-/* .nameClose {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-} */
 
 .name {
     margin: auto;
@@ -33,8 +29,8 @@
 
 .icon {
     align-self: center;
-    height: 170px;
-    width: 170px;
+    height: 50%;
+    width: 50%;
 }
 
 .temps {

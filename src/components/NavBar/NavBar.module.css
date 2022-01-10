@@ -1,8 +1,19 @@
 .nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 100%;
     background-color: moccasin;
     font-family: 'Montserrat', sans-serif;
+}
+
+.brandName {
+    font-family: 'Comforter Brush', cursive;
+    font-size: 32px;
+    margin: 4px;
+}
+
+.searchBarDiv {
+    align-self: center;
+    justify-self: flex-start;
 }

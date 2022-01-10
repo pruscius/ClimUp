@@ -5,8 +5,11 @@ import styles from './NavBar.module.css';
 export default function NavBar () {
     return (
         <nav className={styles.nav}>
-            <h4>ClimUp</h4>
-            <SearchBar />
+            <h4 className={styles.brandName}>ClimUp</h4>
+            <div className={styles.searchBarDiv}>
+                <SearchBar />
+            </div>
+            <div></div>
         </nav>
     )
 }

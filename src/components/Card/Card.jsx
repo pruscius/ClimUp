@@ -1,20 +1,25 @@
 import React from 'react';
 import styles from './Card.module.css';
 import { useDispatch } from 'react-redux';
-import { removeCity } from '../../common/redux/actions';
+import { detailCity, removeCity } from '../../common/redux/actions';
 
-export default function Card ({ name, minTemp, maxTemp, country, img, cityId }) {
+export default function Card({ name, minTemp, maxTemp, country, img, cityId }) {
     const dispatch = useDispatch();
     
-    function handleClose() {
+    function handleClose(e) {
+        e.stopPropagation();
         dispatch(removeCity(cityId));
     }
 
+    function handleDetail() {
+        dispatch(detailCity(cityId))
+    }
+
     return (
-        <div className={styles.card}>
-                <p className={styles.close} onClick={handleClose}>X</p>
-                <h5 className={styles.name}>{name}, {country}</h5>
-            <img className={styles.icon} src={"http://openweathermap.org/img/wn/"+img+"@2x.png"} alt="weather"/>
+        <div onClick={handleDetail} className={styles.card}>
+                <p className={styles.close} onClick={e => handleClose(e)}>X</p>
+                <h4 className={styles.name}>{name}, {country}</h4>
+            <img className={styles.icon} src={`http://openweathermap.org/img/wn/${img}@2x.png`} alt="weather"/>
             <div className={styles.temps}>
                 <div>
                     <p>Min</p>

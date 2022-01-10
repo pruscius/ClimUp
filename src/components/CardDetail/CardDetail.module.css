@@ -1,0 +1,19 @@
+.cardDetail {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.icon {
+    align-self: center;
+    height: 50%;
+    width: 50%;
+}
+
+.temps {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-evenly;
+}
