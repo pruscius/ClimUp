@@ -3,14 +3,14 @@
     flex-direction: row;
     justify-content: space-evenly;
     width: 100%;
-    background-color: moccasin;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .brandName {
     font-family: 'Comforter Brush', cursive;
     font-size: 32px;
     margin: 4px;
+    color: #fff;
 }
 
 .searchBarDiv {

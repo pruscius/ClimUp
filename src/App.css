@@ -1,8 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap');
 
 .App {
   text-align: center;
+  background-color: #0c054a;
+  background-size: cover;
+  overflow: auto;
+  top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
 }
 
 .App-logo {

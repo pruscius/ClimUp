@@ -22,7 +22,7 @@ export default function SearchBar () {
             <input 
                 className={styles.input}
                 type="text" 
-                placeholder="Search for cities..."
+                placeholder="City"
                 onChange={e => handleChange(e)}
                 value={city}
             />

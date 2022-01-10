@@ -1,9 +1,10 @@
 .card {
     display: flex;
     flex-direction: column;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     cursor: pointer;
     border-style: solid;
+    border-color: #fff;
     border-width: 2px;
     border-radius: 4px;
     max-width: 100%;
@@ -13,6 +14,7 @@
 
 .name {
     margin: auto;
+    color: #fff
 }
 
 .close {
@@ -21,7 +23,7 @@
     margin: 2px 2px;
     background-color: red;
     border-radius: 4px;
-    color: white;
+    color: #fff;
     font-weight: bold;
     width: 20px;
     height: 20px;
@@ -37,4 +39,5 @@
     display: flex; 
     flex-direction: row;
     justify-content: space-evenly;
+    color: #fff
 }
