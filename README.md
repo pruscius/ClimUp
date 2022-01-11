@@ -8,7 +8,7 @@ https://climup.vercel.app/
 
 ## Screenshots
 
-![img1](./src/assets/Screenshot.png)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+![img1](./src/common/assets/Screenshot.png)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 
 
 # Getting Started with Create React App
