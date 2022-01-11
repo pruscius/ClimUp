@@ -56,7 +56,6 @@ export default function CardDetail () {
                     {   
                         city.list.map((time, index) => {
                             let date = new Date(time.dt_txt)
-                            console.log(date)
                             const day = new Date(date).toLocaleString('en-us', {weekday: 'short'});
                             if (date.getUTCHours() === 12) {
                                 return (

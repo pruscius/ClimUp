@@ -1,0 +1,50 @@
+
+.card {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(212, 224, 245);
+    color: #0c054a;
+    cursor: pointer;
+    border-radius: 4px;
+    max-width: 100%;
+    max-height: 100%; 
+    margin: 5px;
+    width: 9em;
+    height: 4em;
+}
+
+.name {
+    margin: auto;
+    justify-self: center;
+    margin-bottom: 0px;
+    margin-top: 6px;
+}
+
+.close {
+    align-self: flex-end;
+    cursor: pointer;
+    margin: 0px;
+    margin-top: 1px;
+    color: #0c054a;
+    border-radius: 4px;
+    font-weight: bold;
+    width: 20px;
+    height: 20px;
+    margin-bottom: -22px;
+}
+
+.temps {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: #0c054a;
+}
+
+.minMax {
+    margin: 1px;
+}
+
+.values {
+    margin: 1px;
+}
