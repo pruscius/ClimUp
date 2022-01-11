@@ -1,6 +1,6 @@
 # Clim Up
 
-> A simple weather app developed in my spare time.
+> A simple weather app that consumes the Open Weather API.
 
 # Web Site
 
