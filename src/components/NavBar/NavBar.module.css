@@ -3,7 +3,9 @@
     flex-direction: row;
     justify-content: space-evenly;
     width: 100%;
+    max-width: 100%;
     font-family: 'Poppins', sans-serif;
+    flex-wrap: wrap;
 }
 
 .brandName {
@@ -15,6 +17,4 @@
 
 .searchBarDiv {
     align-self: center;
-    justify-self: flex-start;
-    /* max-width: 20%; */
 }
