@@ -8,7 +8,7 @@ export default function CardDetail () {
     return (
         <div className={styles.container}>
             <div className={styles.card}>
-                <h5 className={styles.forecast}>Forecast</h5>
+                <h5 className={styles.forecast}>Next Week</h5>
                 <div className={styles.todayContainer}>
                     <div className={styles.firstRow}>
                         <div className={styles.todayImg}>
