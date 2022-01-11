@@ -1,6 +1,6 @@
 # Clim Up
 
-> A simple weather app that consumes the Open Weather API.
+> A simple and responsive weather app that consumes the Open Weather API.
 
 # Web Site
 
@@ -9,7 +9,6 @@ https://climup.vercel.app/
 ## Screenshots
 
 ![img1](./src/common/assets/Screenshot.png)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-
 
 # Getting Started with Create React App
 
