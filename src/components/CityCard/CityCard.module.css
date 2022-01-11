@@ -19,6 +19,9 @@
     justify-self: center;
     margin-bottom: 0px;
     margin-top: 6px;
+    max-width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .close {
