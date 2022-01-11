@@ -16,7 +16,7 @@ export default function Home () {
 
     useEffect(() => {
         dispatch(getCity('London'));
-        dispatch(detailCity('2643743'))
+        dispatch(detailCity('2643743'));
     }, [])
 
     return (
@@ -31,7 +31,7 @@ export default function Home () {
                     <div><CardDetail /></div>
                 </div>
                 :
-                <Oval color="#00BFFF" height={80} width={80} />
+                <Oval color="#00BFFF" height={80} width={80} className={styles.loader}/>
             }
         </div>
     )
