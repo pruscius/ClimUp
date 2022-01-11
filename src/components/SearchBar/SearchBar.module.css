@@ -9,7 +9,6 @@
     border-color: #fff;
     margin-right: 12px;
     margin-left: -45px;
-
 }
 
 input:focus {
@@ -18,6 +17,7 @@ input:focus {
 
 .btn {
     font-family: 'Poppins', sans-serif;
+    margin-top: 0.4rem;
     cursor: pointer;
     font-weight: bold;
     border-width: 0px;

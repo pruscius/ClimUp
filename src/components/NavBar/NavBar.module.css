@@ -16,4 +16,5 @@
 .searchBarDiv {
     align-self: center;
     justify-self: flex-start;
+    /* max-width: 20%; */
 }

@@ -1,43 +1,78 @@
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.2rem;
+}
+
 .card {
     display: flex;
     flex-direction: column;
+    color: #fff;
     font-family: 'Poppins', sans-serif;
-    cursor: pointer;
     border-style: solid;
     border-color: #fff;
     border-width: 2px;
-    border-radius: 4px;
+    border-radius: 12px;
     max-width: 100%;
-    width: 16%;
+    width: 12rem;
     margin: 5px;
+    padding: 5px;
 }
 
-.name {
-    margin: auto;
-    color: #fff
-}
-
-.close {
-    align-self: flex-end;
-    cursor: pointer;
-    margin: 2px 2px;
-    background-color: red;
-    border-radius: 4px;
-    color: #fff;
-    font-weight: bold;
-    width: 20px;
-    height: 20px;
+.dateIcon {
+    display: flex;
+    flex-direction: row;
 }
 
 .icon {
     align-self: center;
-    height: 50%;
-    width: 50%;
+    height: 4rem;
+    width: 4rem;
+}
+
+.dateContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.today {
+    margin: 2px;     
+    align-self: flex-start;
+}
+
+.date {
+    margin: 2px;
+    margin-left: 4px;
+    align-self: flex-start;
+}
+
+.presentTempCont {
+    display: flex;
+    justify-content: center;
+}
+
+.presentTemp {
+    font-size: 6em;
+    margin: 0px;
+    margin-bottom: -1rem;    
+    font-weight: lighter;
+}
+
+.degrees {
+    margin-top: 2.2em;
+}
+
+.name {
+    margin: 2px;
+}
+
+.feelsLike {
+    margin: 2px;
+    font-weight: lighter;
 }
 
 .temps {
     display: flex; 
     flex-direction: row;
     justify-content: space-evenly;
-    color: #fff
 }

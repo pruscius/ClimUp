@@ -1,35 +1,45 @@
 import React from 'react';
 import styles from './Card.module.css';
-import { useDispatch } from 'react-redux';
-import { detailCity, removeCity } from '../../common/redux/actions';
+import { useSelector } from 'react-redux';
 
-export default function Card({ name, minTemp, maxTemp, country, img, cityId }) {
-    const dispatch = useDispatch();
-    
-    function handleClose(e) {
-        e.stopPropagation();
-        dispatch(removeCity(cityId));
+export default function Card() {
+    const city = useSelector(state => state.city);
+
+    let date;
+
+    if (Object.keys(city).length > 0 ) {
+        const today = city.list[0].dt_txt;
+        const dayNumber = new Date(today).getDate();
+        const day = new Date(today).toLocaleString('en-us', {weekday: 'short'});
+        const month = new Date(today).toLocaleString('en-us', {month: 'short'});
+        date = `${day}, ${dayNumber} ${month}`;
     }
 
-    function handleDetail() {
-        dispatch(detailCity(cityId))
-    }
+    let sphere = '\u25CF';
 
     return (
-        <div onClick={handleDetail} className={styles.card}>
-                <p className={styles.close} onClick={e => handleClose(e)}>X</p>
-                <h4 className={styles.name}>{name}, {country}</h4>
-            <img className={styles.icon} src={`http://openweathermap.org/img/wn/${img}@2x.png`} alt="weather"/>
-            <div className={styles.temps}>
-                <div>
-                    <p>Min</p>
-                    <p>{minTemp}ºC</p>
+        <div className={styles.container}>
+           
+            <div className={styles.card}>
+                <div className={styles.dateIcon}>
+                    <img 
+                        className={styles.icon} 
+                        src={`http://openweathermap.org/img/wn/${city.list[0].weather[0].icon}@2x.png`} 
+                        alt="weather"
+                    />
+                    <div className={styles.dateContainer}>
+                        <h2 className={styles.today}>Today</h2>
+                        <h6 className={styles.date}>{date}</h6>
+                    </div>
                 </div>
-                <div>
-                    <p>Max</p>
-                    <p>{maxTemp}ºC</p>            
+                <div className={styles.presentTempCont}>
+                    <h5 className={styles.presentTemp}>{Math.round(city.list[0].main.temp)}</h5>
+                    <span className={styles.degrees}>º C</span>
                 </div>
-            </div>
-        </div>
+                <h5 className={styles.name}>{city.city.name}, {city.city.country}</h5>
+                <h6 className={styles.feelsLike}>Feels Like {Math.round(city.list[0].main.feels_like)} {sphere} {city.list[0].weather[0].main}</h6>
+            </div>         
+        </div>       
     )
 }
+         
