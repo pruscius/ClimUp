@@ -1,3 +1,15 @@
+# Clim Up
+
+> A simple weather app that consumes the Open Weather API.
+
+# Web Site
+
+https://climup.vercel.app/
+
+## Screenshots
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
