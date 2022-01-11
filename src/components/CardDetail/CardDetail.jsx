@@ -1,5 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import SmallWeather from '../SmallWeather/SmallWeather';
 import styles from './CardDetail.module.css';
 
 export default function CardDetail () {
@@ -49,6 +50,27 @@ export default function CardDetail () {
                             <h6 className={styles.values}>{city.list[0].main.pressure}hPa</h6>
                         </div>
                     </div>
+                </div>
+
+                <div className={styles.daysContainer}>
+                    {   
+                        city.list.map((time, index) => {
+                            let date = new Date(time.dt_txt)
+                            console.log(date)
+                            const day = new Date(date).toLocaleString('en-us', {weekday: 'short'});
+                            if (date.getUTCHours() === 12) {
+                                return (
+                                    <SmallWeather 
+                                        key={index}
+                                        day={day}
+                                        minTemp={Math.round(time.main.temp_min)}
+                                        maxTemp={Math.round(time.main.temp_max)}
+                                        icon={time.weather[0].icon}
+                                    />
+                                )
+                            }
+                        })
+                    }
                 </div>
             </div>    
         </div>

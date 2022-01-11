@@ -20,8 +20,8 @@ export default function Home () {
             <NavBar />
             { Object.keys(city).length > 0 ?
                 <div className={styles.cardContainer}>
-                    <Card />
-                    <CardDetail />
+                    <div><Card /></div>
+                    <div><CardDetail /></div>
                 </div>
                 :
                 <Oval color="#00BFFF" height={80} width={80} />

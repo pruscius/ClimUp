@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 3em;
+}
+
+.icon {
+    height: 2em;
+    width: 2em;
+}
+.tempsContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.temps {
+    display: flex;
+    flex-direction: row;
+}
+
+.slash {
+    align-self: center;
+}
