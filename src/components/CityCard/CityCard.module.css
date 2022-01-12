@@ -14,6 +14,10 @@
     height: 4em;
 }
 
+.card:hover {
+    content: attr(title);
+}
+
 .name {
     margin: auto;
     justify-self: center;

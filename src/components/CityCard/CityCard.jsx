@@ -16,7 +16,7 @@ export default function CityCard({ name, minTemp, maxTemp, country, img, cityId 
     }
 
     return (
-        <div onClick={handleDetail} className={styles.card}>
+        <div onClick={handleDetail} className={styles.card} title={`${name}, ${country}`}>
                 <h6 className={styles.close} onClick={e => handleClose(e)}>X</h6>
                 <h5 className={styles.name}>{name}, {country}</h5>
             <div className={styles.temps}>
