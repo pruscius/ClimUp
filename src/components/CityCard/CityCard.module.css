@@ -6,7 +6,7 @@
     background-color: rgb(212, 224, 245);
     color: #0c054a;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 6px;
     max-width: 100%;
     max-height: 100%; 
     margin: 5px;
@@ -15,7 +15,9 @@
 }
 
 .card:hover {
+    transition: 0.2s;
     content: attr(title);
+    background-color: rgb(186, 204, 236);
 }
 
 .name {
