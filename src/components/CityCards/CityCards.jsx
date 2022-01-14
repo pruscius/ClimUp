@@ -17,6 +17,8 @@ export default function CityCards () {
                     minTemp={Math.round(c.main.temp_min)}
                     maxTemp={Math.round(c.main.temp_max)}
                     img={c.weather[0].icon}
+                    lat={c.coord.lat}
+                    lon={c.coord.lon}
                 />
             )
             : null

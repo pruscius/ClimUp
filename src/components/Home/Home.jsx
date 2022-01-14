@@ -16,7 +16,7 @@ export default function Home () {
 
     useEffect(() => {
         dispatch(getCity('London'));
-        dispatch(detailCity('2643743'));
+        // dispatch(detailCity('2643743'));
     }, [])
 
     return (

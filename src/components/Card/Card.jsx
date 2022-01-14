@@ -8,7 +8,7 @@ export default function Card() {
     let date;
 
     if (Object.keys(city).length > 0 ) {
-        const today = city.list[0].dt_txt;
+        const today = new Date(city.current.dt * 1000);        
         const dayNumber = new Date(today).getDate();
         const day = new Date(today).toLocaleString('en-us', {weekday: 'short'});
         const month = new Date(today).toLocaleString('en-us', {month: 'short'});
@@ -24,7 +24,7 @@ export default function Card() {
                 <div className={styles.dateIcon}>
                     <img 
                         className={styles.icon} 
-                        src={`http://openweathermap.org/img/wn/${city.list[0].weather[0].icon}@2x.png`} 
+                        src={`http://openweathermap.org/img/wn/${city.daily[0].weather[0].icon}@2x.png`} 
                         alt="weather"
                     />
                     <div className={styles.dateContainer}>
@@ -33,11 +33,11 @@ export default function Card() {
                     </div>
                 </div>
                 <div className={styles.presentTempCont}>
-                    <h5 className={styles.presentTemp}>{Math.round(city.list[0].main.temp)}</h5>
+                    <h5 className={styles.presentTemp}>{Math.round(city.current.temp)}</h5>
                     <span className={styles.degrees}>º C</span>
                 </div>
-                <h5 className={styles.name}>{city.city.name}, {city.city.country}</h5>
-                <h6 className={styles.feelsLike}>Feels Like {Math.round(city.list[0].main.feels_like)} {sphere} {city.list[0].weather[0].main}</h6>
+                <h5 className={styles.name}>{city.name}, {city.country}</h5>
+                <h6 className={styles.feelsLike}>Feels Like {Math.round(city.current.feels_like)} {sphere} {city.current.weather[0].main}</h6>
             </div>         
         </div>       
     )

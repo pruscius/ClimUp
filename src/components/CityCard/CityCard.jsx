@@ -3,7 +3,7 @@ import styles from './CityCard.module.css';
 import { useDispatch } from 'react-redux';
 import { detailCity, removeCity } from '../../common/redux/actions';
 
-export default function CityCard({ name, minTemp, maxTemp, country, img, cityId }) {
+export default function CityCard({ name, minTemp, maxTemp, country, cityId, lat, lon }) {
     const dispatch = useDispatch();
     
     function handleClose(e) {
@@ -12,7 +12,7 @@ export default function CityCard({ name, minTemp, maxTemp, country, img, cityId 
     }
 
     function handleDetail() {
-        dispatch(detailCity(cityId))
+        dispatch(detailCity(cityId, name, country, lat, lon))
     }
 
     return (
