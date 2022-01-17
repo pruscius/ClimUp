@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+@font-face {
+  font-family: 'Futura';
+  src: url('./common/assets/Futura.ttf');
+}
+
+@font-face {
+  font-family: 'Futura Bold';
+  src: url('./common/assets/FuturaBold.ttf');
+}
 
 .App {
   text-align: center;

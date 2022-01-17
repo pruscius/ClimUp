@@ -29,5 +29,6 @@ input:focus {
     background-color: goldenrod;
     color: #fff;
     border-radius: 4px;
-    height: 1.80em
+    height: 1.80em;
+    text-shadow: #000 0.0625rem 0 0.625rem;
 }
