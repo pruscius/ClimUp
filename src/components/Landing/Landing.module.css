@@ -1,12 +1,24 @@
 .container {
+    background-size: cover;
+    overflow: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #fff;
 }
+
 
 .brandName {
     font-family: 'Comforter Brush', cursive; 
     color: #fff;
     font-size: 8em;
     margin-bottom: 1px;
+    margin-top: 1px;
 }
 
 .productDescContainer {
@@ -40,6 +52,7 @@
     text-shadow: #000 0.0625rem 0 0.625rem;
     transition: 0.2s ease-out;
     font-stretch: expanded;
+    filter: grayscale(20%)
 }
 
 .button:hover{
