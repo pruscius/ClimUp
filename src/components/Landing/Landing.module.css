@@ -1,0 +1,47 @@
+.container {
+    color: #fff;
+}
+
+.brandName {
+    font-family: 'Comforter Brush', cursive; 
+    color: #fff;
+    font-size: 8em;
+    margin-bottom: 1px;
+}
+
+.productDescContainer {
+    display: flex;
+    justify-content: center;
+    text-align: start;
+    font-size: 1.3em
+}
+
+.productDescription {
+    font-family: 'Futura';
+}
+
+.weather {
+    font-family: 'Futura Bold';
+    color: goldenrod;
+    filter: grayscale(20%);
+}
+
+.button {
+    cursor: pointer;
+    border-style: none;
+    background-color: #ff653f;
+    color: #fff;
+    border-radius: 3px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    height: 2em;
+    width: 6em;
+    font-size: 1rem;
+    text-shadow: #000 0.0625rem 0 0.625rem;
+    transition: 0.2s ease-out;
+    font-stretch: expanded;
+}
+
+.button:hover{
+    transform: translate3d(0,1.2px,0);
+}
